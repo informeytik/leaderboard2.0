@@ -1,0 +1,103 @@
+{
+  "name": "leaderboard",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "JHGfv",
+  "actions": [
+    {
+      "debu": "0",
+      "numbefst2": ")",
+      "numbefstselect": "2",
+      "sort": "1",
+      "start": "username",
+      "middle": "-",
+      "end": "result",
+      "getresults": "5",
+      "dataName": "level",
+      "varName2": "lvl",
+      "storage": "1",
+      "name": "Store Member Data List"
+    },
+    {
+      "debu": "0",
+      "numbefst2": ")",
+      "numbefstselect": "2",
+      "sort": "1",
+      "start": "username",
+      "middle": "-",
+      "end": "result",
+      "getresults": "5",
+      "dataName": "cash",
+      "varName2": "hs",
+      "storage": "1",
+      "name": "Store Member Data List"
+    },
+    {
+      "debu": "0",
+      "numbefst2": ")",
+      "numbefstselect": "2",
+      "sort": "1",
+      "start": "username",
+      "middle": "-",
+      "end": "result",
+      "getresults": "5",
+      "dataName": "bank",
+      "varName2": "lb",
+      "storage": "1",
+      "name": "Store Member Data List"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Top 5:",
+          "url": "",
+          "color": "BLACK",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "",
+          "fields": [
+            {
+              "name": "level:",
+              "value": "${tempVars(\"lvl\")}",
+              "inline": "true"
+            },
+            {
+              "name": "hajs:",
+              "value": "${tempVars(\"hs\")}",
+              "inline": "true"
+            },
+            {
+              "name": "bank:",
+              "value": "${tempVars(\"lb\")}",
+              "inline": "true"
+            }
+          ],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": false,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "emm",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "0"
+}
